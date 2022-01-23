@@ -2,7 +2,7 @@
 This is a tool to avoid Android Emulator changing the host machine microphone volume randomly causing undesirable noises on Ubuntu 20.04. It's a small script that runs forever since the system startup and always check if the process related to the Android Emulator `qemu-system-x86` was started. When the process is started, the script forces the host machine microphone volume to be fixed in a specific value declared on `volume.conf` file.
 
 ## Get started
-- Download the lastest version of `mic_volume_stabilizer`.
+- Download the lastest version of `mic_volume_stabilizer` [here](https://github.com/sudoariel/Android-Emulator-MicVolumeStabilizer/archive/refs/tags/v1.0.zip).
 - Open the terminal and install the tool using the command `source install.sh`.
 - The tool is already installed and by default if you initialize the Android Emulator, it'll set the host machine microphone volume to 50%. You can change this value in the file `volume.conf` located at `$HOME/mic_volume_stabilizer` directory.
 
