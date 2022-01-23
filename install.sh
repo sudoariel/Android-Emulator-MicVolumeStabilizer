@@ -22,5 +22,7 @@ Comment[en_US]=Volume Stabilizer for Android Emulator
 Comment=Volume Stabilizer for Android Emulator
 EOF
 echo "mic_volume_stabilizer installed."
-$DIR/mic_volume_stabilizer.sh &
+cd $DIR
+./mic_volume_stabilizer.sh &
+cd $OLDPWD
 echo "mic_volume_stabilizer initialized."

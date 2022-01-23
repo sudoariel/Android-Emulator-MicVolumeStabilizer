@@ -10,7 +10,7 @@ This is a tool to avoid Android Emulator changing the host machine microphone vo
 ### Disabling auto-initialization
 If you want to disable the script auto-initialization, run the following command:
 ```
-rm ~/.config/autostart/mic_volume_stabilizer.sh.desktop`
+rm ~/.config/autostart/mic_volume_stabilizer.sh.desktop
 ```
 ### Removing the script folder
 If you want to remove the tool completely, run the following command:
