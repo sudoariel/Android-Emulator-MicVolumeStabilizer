@@ -24,7 +24,7 @@ do
     while [ ! -z "$result" ]
     do
         sleep 0.1
-        MVS_VOLUME_TARGET=$(<volume.conf)
+        MVS_VOLUME_TARGET=$(<$HOME/mic_volume_stabilizer/volume.conf)
         pacmd set-source-volume $(get_microphone_device) $(map_range $MVS_VOLUME_TARGET)
         result=`ps -A | grep qemu-system-x86`
     done  
