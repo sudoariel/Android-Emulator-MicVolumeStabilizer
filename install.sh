@@ -9,6 +9,7 @@ cp volume.conf $DIR
 echo "Enabling permissions to mic_volume_stabilizer.sh"
 chmod +777 $DIR/mic_volume_stabilizer.sh
 echo "Setting auto-initialization..."
+mkdir ~/.config/autostart
 cat << EOF > ~/.config/autostart/mic_volume_stabilizer.sh.desktop
 [Desktop Entry]
 Type=Application
